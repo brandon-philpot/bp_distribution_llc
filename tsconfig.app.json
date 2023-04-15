@@ -11,5 +11,8 @@
   ],
   "include": [
     "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "src/app/modules/mock-services/mock-services.module.ts"
   ]
 }
