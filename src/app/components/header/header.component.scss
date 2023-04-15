@@ -1,0 +1,23 @@
+mat-toolbar {
+    height: 120px;
+    justify-content: space-between;
+    svg#header-bp-distribution-logo {
+        width: 100px;
+        height: 68.705px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        li {
+            padding: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #033ED3;
+        }
+        a:hover {
+            color: #b62200;
+        }
+    }
+}
