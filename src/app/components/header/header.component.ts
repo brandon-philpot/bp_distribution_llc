@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
   }
 
   /**
-   * Initilze service calls
+   * Initilze service calls and setup component
    *
    * @memberof HeaderComponent
    */
