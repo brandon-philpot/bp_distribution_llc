@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
+import { RoutingModule } from './modules/routing/routing.module';
 import { ImportImageService } from './services/import-image.service';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ImportImageService } from './services/import-image.service';
     HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    RoutingModule
   ],
   declarations: [
     AppComponent,
@@ -22,6 +24,8 @@ import { ImportImageService } from './services/import-image.service';
   providers: [
     ImportImageService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
