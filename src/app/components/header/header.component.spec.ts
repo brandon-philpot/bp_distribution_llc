@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Subject } from 'rxjs';
 
 import { removeStylesFromDOM } from '../../../../unit-test-mock-data/functions/styles-function';
 import { AngularMaterialModule } from '../../modules/angular-material/angular-material.module';
@@ -14,9 +13,6 @@ describe('HeaderComponent', () => {
   // Setup spy references
   let spyNGOnInit: jasmine.Spy<any>;
   let spyServiceGetSVG: jasmine.Spy<any>;
-
-  // Used to handle subscriptions
-  const ngUnsubscribe$: Subject<void> = new Subject<void>();
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -49,9 +45,6 @@ describe('HeaderComponent', () => {
   };
 
   afterAll(() => {
-    ngUnsubscribe$.next();
-    ngUnsubscribe$.complete();
-
     removeStylesFromDOM();
   });
 
