@@ -18,7 +18,8 @@ body {
         overflow: hidden;
         bp-dist-home-page,
         bp-dist-about-page,
-        bp-dist-services-page {
+        bp-dist-services-page,
+        bp-dist-products-page {
             height: calc(100vh - 120px);
             width: 100%;
             display: flex;
