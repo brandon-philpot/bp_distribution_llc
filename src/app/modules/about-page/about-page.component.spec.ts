@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { removeStylesFromDOM } from '../../../../unit-test-mock-data/functions/styles-function';
-import { HomePageComponent } from './home-page.component';
-import { HomePageModule } from './home-page.module';
+import { AboutPageComponent } from './about-page.component';
+import { AboutPageModule } from './about-page.module';
 
-describe('HomePageComponent', () => {
-  let component: HomePageComponent;
-  let fixture: ComponentFixture<HomePageComponent>;
+describe('AboutPageComponent', () => {
+  let component: AboutPageComponent;
+  let fixture: ComponentFixture<AboutPageComponent>;
 
   // Setup spy references
   let spyNGOnInit: jasmine.Spy<any>;
@@ -14,14 +14,14 @@ describe('HomePageComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        HomePageModule
+        AboutPageModule
       ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomePageComponent);
+    fixture = TestBed.createComponent(AboutPageComponent);
     component = fixture.componentInstance;
 
     // Add method spies
@@ -38,11 +38,11 @@ describe('HomePageComponent', () => {
     removeStylesFromDOM();
   });
 
-  it('should create HomePageComponent', () => {
+  it('should create AboutPageComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  describe('HomePageComponent methods', () => {
+  describe('AboutPageComponent methods', () => {
 
     describe('ngOnInit()', () => {
 

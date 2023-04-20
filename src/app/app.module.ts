@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AboutPageModule } from './modules/about-page/about-page.module';
 import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
 import { HomePageModule } from './modules/home-page/home-page.module';
 import { RoutingModule } from './modules/routing/routing.module';
@@ -17,6 +18,7 @@ import { ImportImageService } from './services/import-image.service';
     BrowserAnimationsModule,
     AngularMaterialModule,
     RoutingModule,
+    AboutPageModule,
     HomePageModule
   ],
   declarations: [
