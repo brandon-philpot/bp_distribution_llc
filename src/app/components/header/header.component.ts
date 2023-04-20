@@ -10,7 +10,7 @@ import { ImportImageService } from '../../services/import-image.service';
 })
 export class HeaderComponent implements OnInit {
   // SVG company logo name passed to service so svg can be retrieved
-  readonly SVG_NAME: string = 'bp_distrobution_logo_100x68_705';
+  readonly SVG_NAME: string = 'bp_distribution_logo_100x68_705';
   // SVG company logo passed through dom bypass sanitizer so error is not thrown
   svgBPDistributionLogo: SafeHtml;
 
