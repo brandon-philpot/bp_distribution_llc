@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 
+import { FourZeroFourPageComponent } from '../../404-page/four-zero-four-page.component';
 import { AboutPageComponent } from '../../about-page/about-page.component';
 import { HomePageComponent } from '../../home-page/home-page.component';
 import { ProductsPageComponent } from '../../products-page/products-page.component';
@@ -10,5 +11,6 @@ export const BP_DIST_ROUTES: Routes = [
     { path: 'home', redirectTo: '/', pathMatch: 'full'},
     { path: 'about', component: AboutPageComponent },
     { path: 'services', component: ServicesPageComponent },
-    { path: 'products', component: ProductsPageComponent }
+    { path: 'products', component: ProductsPageComponent },
+    { path: '**', component: FourZeroFourPageComponent }
 ];

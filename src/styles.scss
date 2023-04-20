@@ -12,21 +12,33 @@ body {
     font-family: Roboto,
     "Helvetica Neue",
     sans-serif;
+
     app-root {
         height: 100%;
         width: 100%;
         overflow: hidden;
+
         bp-dist-home-page,
         bp-dist-about-page,
         bp-dist-services-page,
-        bp-dist-products-page {
+        bp-dist-products-page,
+        bp-dist-four-zero-four-page {
             height: calc(100vh - 120px);
             width: 100%;
             display: flex;
+
             .page-wrapper {
                 height: 100%;
                 width: 100%;
                 overflow: auto;
+            }
+        }
+
+        bp-dist-four-zero-four-page {
+            .page-wrapper {
+                overflow: hidden !important;
+                background-color: lightgreen;
+                text-align: center;
             }
         }
     }
