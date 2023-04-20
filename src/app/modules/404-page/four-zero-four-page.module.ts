@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
-import { ProductsPageComponent } from './products-page.component';
+import { FourZeroFourPageComponent } from './four-zero-four-page.component';
 
 @NgModule({
   imports: [
@@ -12,10 +12,10 @@ import { ProductsPageComponent } from './products-page.component';
     AngularMaterialModule,
   ],
   declarations: [
-    ProductsPageComponent
+    FourZeroFourPageComponent
   ],
   exports: [
-    ProductsPageComponent
+    FourZeroFourPageComponent
   ]
 })
-export class ProductsPageModule { }
+export class FourZeroFourPageModule { }
