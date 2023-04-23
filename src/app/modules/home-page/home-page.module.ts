@@ -9,7 +9,7 @@ import { HomePageComponent } from './home-page.component';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    AngularMaterialModule,
+    AngularMaterialModule
   ],
   declarations: [
     HomePageComponent

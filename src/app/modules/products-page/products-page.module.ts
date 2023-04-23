@@ -9,7 +9,7 @@ import { ProductsPageComponent } from './products-page.component';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    AngularMaterialModule,
+    AngularMaterialModule
   ],
   declarations: [
     ProductsPageComponent
