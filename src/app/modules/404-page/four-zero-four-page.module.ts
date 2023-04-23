@@ -9,7 +9,7 @@ import { FourZeroFourPageComponent } from './four-zero-four-page.component';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    AngularMaterialModule,
+    AngularMaterialModule
   ],
   declarations: [
     FourZeroFourPageComponent

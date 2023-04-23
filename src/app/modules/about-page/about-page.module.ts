@@ -9,7 +9,7 @@ import { AboutPageComponent } from './about-page.component';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    AngularMaterialModule,
+    AngularMaterialModule
   ],
   declarations: [
     AboutPageComponent

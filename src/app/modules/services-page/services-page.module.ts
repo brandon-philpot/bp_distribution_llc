@@ -9,7 +9,7 @@ import { ServicesPageComponent } from './services-page.component';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    AngularMaterialModule,
+    AngularMaterialModule
   ],
   declarations: [
     ServicesPageComponent
