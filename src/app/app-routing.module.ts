@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { BP_DIST_ROUTES } from './constants/routing.constant';
+import { BP_DIST_ROUTES } from './constants/app-routing.constant';
 
 @NgModule({
   imports: [
@@ -11,4 +11,4 @@ import { BP_DIST_ROUTES } from './constants/routing.constant';
     RouterModule
   ]
 })
-export class RoutingModule { }
+export class AppRoutingModule { }

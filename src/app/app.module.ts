@@ -8,9 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FourZeroFourPageModule } from './modules/404-page/four-zero-four-page.module';
 import { AboutPageModule } from './modules/about-page/about-page.module';
 import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
+import { AppRoutingModule } from './app-routing.module';
 import { HomePageModule } from './modules/home-page/home-page.module';
 import { ProductsPageModule } from './modules/products-page/products-page.module';
-import { RoutingModule } from './modules/routing/routing.module';
 import { ServicesPageModule } from './modules/services-page/services-page.module';
 import { ImportImageService } from './services/import-image.service';
 
@@ -20,7 +20,7 @@ import { ImportImageService } from './services/import-image.service';
     BrowserModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    RoutingModule,
+    AppRoutingModule,
     AboutPageModule,
     FourZeroFourPageModule,
     HomePageModule,
