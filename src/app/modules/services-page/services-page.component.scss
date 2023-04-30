@@ -1,0 +1,50 @@
+.page-wrapper {
+    background-color: #000000;
+
+    .service-page-background {
+        background-image: url(/assets/images/jpgs/network.jpg);
+        // background-image: url(/assets/images/jpegs/network-management.jpeg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: calc(calc(100vh - 120px) / 2);
+    }
+
+    .services-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        height: calc(calc(100vh - 120px) / 2);
+        width: 100%;
+        padding-inline-start: 0px !important;
+        bottom: 0;
+        position: absolute;
+        list-style-type: none;
+        justify-content: space-evenly;
+        margin-block-start: 0em !important;
+        margin-block-end: 0em !important;
+        background-color: #FFFFFF;
+
+        .service {
+            padding: 16px;
+            width: 400px;
+            margin: 10px;
+            line-height: 1.75rem;
+            color: black;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: center;
+            min-height: 450px;
+
+            .service-title {
+                padding-top: 25px;
+                font-size: 1.75rem;
+                line-height: 2rem;
+            }
+
+            p {
+                white-space: pre-wrap;
+                text-align: left;
+            }
+        }
+    }
+}

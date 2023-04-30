@@ -1,29 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import {
+  faBoxesStacked as fasBoxesStacked,
+  faBuildingCircleArrowRight as fasBuildingCircleArrowRight,
+  faTruckFast as fasTruckFast,
+  faWarehouse as fasWarehouse
+} from '@fortawesome/free-solid-svg-icons';
 
-import { SERVICES_PAGE_TITLE } from './constants/services-page.constant';
+import { SERVICES, SERVICES_PAGE_TITLE } from './constants';
+import { ServiceInterface } from './interfaces';
 
 @Component({
   selector: 'bp-dist-services-page',
   templateUrl: './services-page.component.html',
   styleUrls: ['./services-page.component.scss']
 })
-export class ServicesPageComponent implements OnInit {
+export class ServicesPageComponent {
+  services: ServiceInterface[];
 
   /**
    * Creates an instance of ServicesPageComponent.
    *
-   * @param {Title} title_
+   * @param {Title} title
    * @memberof ServicesPageComponent
    */
-  constructor(private title_: Title) { }
-
-  /**
-   * Initilze service calls and setup component
-   *
-   * @memberof ServicesPageComponent
-   */
-  ngOnInit(): void {
-    this.title_.setTitle(SERVICES_PAGE_TITLE);
+  constructor(title: Title,
+              faIconLibrary: FaIconLibrary) {
+    title.setTitle(SERVICES_PAGE_TITLE);
+    faIconLibrary.addIcons(fasBoxesStacked, fasBuildingCircleArrowRight, fasTruckFast, fasWarehouse);
+    this.services = SERVICES
   }
 }

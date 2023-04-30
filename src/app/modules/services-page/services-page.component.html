@@ -1,3 +1,23 @@
 <div class="page-wrapper">
-    <p>services-page works!</p>
+    <div class="service-page-background"></div>
+    <ul class="services-wrapper">
+        <li *ngFor="let service of services"
+            id="{{ service.id }}" class="service">
+            <fa-icon *ngIf="service.isFAIcon; else matIcon"
+                     id="{{ service.id + '-icon' }}"
+                     aria-hidden="false"
+                     aria-label="service.ariaLabelIcon"
+                     [icon]="[service.faIconLookup.prefix, service.faIconLookup.iconName]"
+                     [styles]="{ stroke: service.faIconLookup.stroke, color: service.faIconLookup.color }"
+                     [size]="service.faIconLookup.size"></fa-icon>
+            <ng-template #matIcon>
+                <mat-icon id="{{ service.id + '-icon' }}"
+                          aria-hidden="false"
+                          aria-label="service.ariaLabelIcon"
+                          fontIcon="service.materialIconName"></mat-icon>
+            </ng-template>
+            <div id="{{ service.id + '-title' }}" class="service-title">{{ service.title }}</div>
+            <p id="{{ service.id + '-description' }}">{{ service.description }}</p>
+        </li>
+    </ul>
 </div>

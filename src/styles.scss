@@ -43,3 +43,18 @@ body {
         }
     }
 }
+
+// Material Overrides
+
+.mat-grid-tile-content {
+    flex-direction: column !important;
+}
+
+// Font Awesome Overrides
+
+.svg-inline--fa {
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #000;
+    padding: 0.5em 0.6em;
+}

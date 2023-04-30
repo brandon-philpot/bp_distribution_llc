@@ -8,9 +8,6 @@ describe('ServicesPageComponent', () => {
   let component: ServicesPageComponent;
   let fixture: ComponentFixture<ServicesPageComponent>;
 
-  // Setup spy references
-  let spyNGOnInit: jasmine.Spy<any>;
-
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
@@ -24,15 +21,8 @@ describe('ServicesPageComponent', () => {
     fixture = TestBed.createComponent(ServicesPageComponent);
     component = fixture.componentInstance;
 
-    // Add method spies
-    spyNGOnInit = spyOn(component, 'ngOnInit').and.callThrough();
-
     fixture.detectChanges();
   });
-
-  const reset = () => {
-    spyNGOnInit.calls.reset();
-  };
 
   afterAll(() => {
     removeStylesFromDOM();
@@ -40,19 +30,5 @@ describe('ServicesPageComponent', () => {
 
   it('should create ServicesPageComponent', () => {
     expect(component).toBeTruthy();
-  });
-
-  describe('ServicesPageComponent methods', () => {
-
-    describe('ngOnInit()', () => {
-
-      it('should call ngOnInit()', () => {
-        reset();
-
-        component.ngOnInit();
-
-        expect(component.ngOnInit).toHaveBeenCalled();
-      });
-    });
   });
 });
