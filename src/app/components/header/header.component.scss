@@ -1,22 +1,33 @@
 mat-toolbar {
     height: 120px;
     justify-content: space-between;
+
     svg#header-bp-distribution-logo {
         width: 100px;
         height: 68.705px;
     }
+
     nav {
         list-style: none;
         display: flex;
         justify-content: space-between;
+
+        a,
+        a:hover {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
         a {
             padding: 10px;
             text-decoration: none;
             color: #033ED3;
         }
+
         a:hover {
             color: #b62200;
         }
+
         .active-route {
             color: #b6614f;
         }

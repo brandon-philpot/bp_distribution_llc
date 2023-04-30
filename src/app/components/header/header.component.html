@@ -5,18 +5,26 @@
            routerLink="/"
            routerLinkActive="active-route"
            [routerLinkActiveOptions]="{ exact: true }"
-           ariaCurrentWhenActive="page">HOME</a>
+           ariaCurrentWhenActive="page"
+           aria-hidden="false"
+           aria-label="Home page navigation">HOME</a>
         <a id="header-a-about"
            routerLink="/about"
            routerLinkActive="active-route"
-           ariaCurrentWhenActive="page">ABOUT</a>
+           ariaCurrentWhenActive="page"
+           aria-hidden="false"
+           aria-label="About page navigation">ABOUT</a>
         <a id="header-a-services"
            routerLink="/services"
            routerLinkActive="active-route"
-           ariaCurrentWhenActive="page">SERVICES</a>
+           ariaCurrentWhenActive="page"
+           aria-hidden="false"
+           aria-label="Service page navigation">SERVICES</a>
         <a id="header-a-products"
            routerLink="/products"
            routerLinkActive="active-route"
-           ariaCurrentWhenActive="page">PRODUCTS</a>
+           ariaCurrentWhenActive="page"
+           aria-hidden="false"
+           aria-label="Products page navigation">PRODUCTS</a>
     </nav>
 </mat-toolbar>
